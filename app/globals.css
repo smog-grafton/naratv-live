@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-nara-purple: #A163F7;
+  --color-nara-blue: #6F88FC;
+  --color-nara-blue-rich: #45E3FF;
+  --color-nara-cyan: #45E3FF;
+  --color-nara-navy: #293B52;
+  --color-nara-surface: #07111F;
+  --color-nara-black: #050B12;
+  --color-nara-red: #FF7582;
+  --color-nara-text-muted: #B9C7DC;
+  --color-nara-border: rgba(69, 227, 255, 0.14);
+
+  --font-sans: var(--font-inter);
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-nara-black);
+    color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    scrollbar-color: var(--color-nara-border) transparent;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+}
+
+@keyframes nara-progress {
+  0% { transform: translateX(-120%); }
+  55% { transform: translateX(180%); }
+  100% { transform: translateX(340%); }
+}

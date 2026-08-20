@@ -1,0 +1,6 @@
+{
+  "name": "Nara TV Live",
+  "description": "Premium boxing streaming platform. Watch live fights, pay-per-view events, and replays.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
